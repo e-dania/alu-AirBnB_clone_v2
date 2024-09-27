@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """This is the place class"""
+from models.amenity import Amenity
 from sqlalchemy.ext.declarative import declarative_base
 from models.base_model import BaseModel, Base
 from sqlalchemy import Column, Table, String, Integer, Float, ForeignKey
@@ -7,7 +8,6 @@ from sqlalchemy.orm import relationship
 from os import getenv
 import models
 import shlex
-import Amenity
 
 
 place_amenity = Table("place_amenity", Base.metadata,
