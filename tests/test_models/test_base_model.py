@@ -1,3 +1,4 @@
+
 #!/usr/bin/python3
 """ """
 from models.base_model import BaseModel
@@ -11,9 +12,9 @@ import os
 class TestBaseModel(unittest.TestCase):
     """ Test base model"""
 
-    def _init_(self, *args, **kwargs):
+    def __init__(self, *args, **kwargs):
         """ """
-        super()._init_(*args, **kwargs)
+        super().__init__(*args, **kwargs)
         self.name = 'BaseModel'
         self.value = BaseModel
 
