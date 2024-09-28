@@ -34,3 +34,4 @@ class TestReview(TestBaseModel):
         new = self.value()
         new.text = ""
         self.assertEqual(type(new.text), str)
+        

@@ -80,3 +80,4 @@ class TestPlace(TestBaseModel):
         """ """
         new = self.value()
         self.assertEqual(type(new.amenity_ids), list)
+        

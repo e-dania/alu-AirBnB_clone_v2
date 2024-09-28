@@ -36,3 +36,4 @@ class TestUser(TestBaseModel):
         new = self.value()
         new.password = "123aashja"
         self.assertEqual(type(new.password), str)
+        

@@ -18,3 +18,4 @@ class TestState(TestBaseModel):
         new = self.value()
         new.name = "Arizona"
         self.assertEqual(type(new.name), str)
+        
